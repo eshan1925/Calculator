@@ -35,6 +35,14 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  void del(String text){
+    int _len;
+    _len=_expression.length;
+    setState(() {
+      _expression=_expression.substring(0,_len-1);
+    });
+  }
+
   void evaluate(String text) {
     Parser p = Parser();
     Expression exp = p.parse(_expression);
@@ -190,8 +198,8 @@ class _MyAppState extends State<MyApp> {
                   callBack: numClick,
                 ),
                 CalcButton(
-                  text: '00',
-                  callBack: numClick,
+                  text: '⌫',textSize: 30,
+                  callBack: del,
                   fillColor: 0xFFFFFFFF,
                   textColor: 0xFF65BDAC,
                 ),
