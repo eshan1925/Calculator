@@ -1,0 +1,16 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Gh-Pages-Staging
+
+on:
+  push:
+    branches: [ master ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: subosito/flutter-action@v1
+      - uses: erickzanardo/flutter-gh-pages@v3
