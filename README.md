@@ -4,7 +4,8 @@ A new Flutter application.
 
 ## Getting Started
 
-Presenting you my first calculator that is hard coded by me.
+Presenting you my first calculator that is coded by me.
+It has functions like keeping history of your calculations and Add,divide,multipy,Subtract.
 
 This project is a starting point for a Flutter application.
 
